@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="32395" started-at="2025-09-23T20:53:00Z" finished-at="2025-09-23T20:53:32Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="32395" started-at="2025-09-23T20:53:00Z" finished-at="2025-09-23T20:53:32Z">
+      <class name="testCase.SeleniumTestCase">
+        <test-method status="PASS" signature="initDriver()[pri:0, instance:testCase.SeleniumTestCase@1817d444]" name="initDriver" is-config="true" duration-ms="3071" started-at="2025-09-23T20:53:00Z" finished-at="2025-09-23T20:53:03Z">
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initSite()[pri:0, instance:testCase.SeleniumTestCase@1817d444]" name="initSite" is-config="true" duration-ms="1377" started-at="2025-09-23T20:53:03Z" finished-at="2025-09-23T20:53:04Z">
+        </test-method> <!-- initSite -->
+        <test-method status="PASS" signature="loginSuccess()[pri:1, instance:testCase.SeleniumTestCase@1817d444]" name="loginSuccess" duration-ms="2771" started-at="2025-09-23T20:53:04Z" finished-at="2025-09-23T20:53:07Z">
+        </test-method> <!-- loginSuccess -->
+        <test-method status="PASS" signature="initSite()[pri:0, instance:testCase.SeleniumTestCase@1817d444]" name="initSite" is-config="true" duration-ms="1880" started-at="2025-09-23T20:53:07Z" finished-at="2025-09-23T20:53:09Z">
+        </test-method> <!-- initSite -->
+        <test-method status="PASS" signature="negativeUsername()[pri:2, instance:testCase.SeleniumTestCase@1817d444]" name="negativeUsername" duration-ms="12721" started-at="2025-09-23T20:53:09Z" finished-at="2025-09-23T20:53:22Z">
+        </test-method> <!-- negativeUsername -->
+        <test-method status="PASS" signature="initSite()[pri:0, instance:testCase.SeleniumTestCase@1817d444]" name="initSite" is-config="true" duration-ms="2985" started-at="2025-09-23T20:53:22Z" finished-at="2025-09-23T20:53:25Z">
+        </test-method> <!-- initSite -->
+        <test-method status="PASS" signature="negativePassword()[pri:3, instance:testCase.SeleniumTestCase@1817d444]" name="negativePassword" duration-ms="5671" started-at="2025-09-23T20:53:25Z" finished-at="2025-09-23T20:53:30Z">
+        </test-method> <!-- negativePassword -->
+        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:testCase.SeleniumTestCase@1817d444]" name="quiteDriver" is-config="true" duration-ms="1909" started-at="2025-09-23T20:53:30Z" finished-at="2025-09-23T20:53:32Z">
+        </test-method> <!-- quiteDriver -->
+      </class> <!-- testCase.SeleniumTestCase -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
