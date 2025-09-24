@@ -3,6 +3,8 @@ package testCase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -16,7 +18,7 @@ import pageObjects.Practice_Test_Autopage;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 
-public class SeleniumTestCase {
+public class EdgeTestCase {
 	
 	private WebDriver webdriver;
 	private LoginPage loginPage;
@@ -27,10 +29,12 @@ public class SeleniumTestCase {
 	@BeforeClass
 	public void initDriver(){
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("user-data-dir=E:\\UserData");
+//		String edgeDriverPath = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedgedriver.exe";
+//		System.setProperty("webdriver.edge.driver", edgeDriverPath);
+		EdgeOptions options = new EdgeOptions();
+//		options.addArguments("user-data-dir=E:\\UserData");
 		options.addArguments("--remote-allow-origins=*");
-		webdriver = new ChromeDriver(options);
+		webdriver = new EdgeDriver(options);
 			
 		loginPage = new LoginPage(webdriver);
 		parcticPage = new Practice_Test_Autopage(webdriver);
@@ -79,7 +83,7 @@ public class SeleniumTestCase {
 		Thread.sleep(5000);
 		String message = loginPage.getLoginFail().getText();
 		String status = loginPage.getLoginFail().getCssValue("display");
-//	    Assert.assertTrue(StringUtils.contains(status, "inline-block"));
+	    Assert.assertTrue(StringUtils.contains(status, "block"));
 		Thread.sleep(5000);
 		Assert.assertTrue(StringUtils.contains(message, "Your username is invalid!"));
 		Thread.sleep(2000);
@@ -99,7 +103,7 @@ public class SeleniumTestCase {
 		Thread.sleep(5000);
 		String message = loginPage.getLoginFail().getText();
 		String status = loginPage.getLoginFail().getCssValue("display");
-//	    Assert.assertTrue(StringUtils.contains(status, "inline-block"));
+	    Assert.assertTrue(StringUtils.contains(status, "block"));
 		
 		Assert.assertTrue(StringUtils.contains(message, "Your password is invalid!"));
 
